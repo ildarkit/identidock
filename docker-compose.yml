@@ -6,3 +6,9 @@ identidock:
                 ENV: DEV
         volumes:
                 - d:/python/identidock/app:/app
+        links:
+                - dnmonster
+                
+
+dnmonster:
+        image: amouat/dnmonster:latest
